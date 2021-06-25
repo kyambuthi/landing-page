@@ -15,6 +15,63 @@ html {
 }
 .header-container-wrapper .header-container {
   display: block;
+  border-bottom: 1px solid gray;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container .nav-menu-bar-container {
+  display: block;
+  padding: 5px;
+  margin-right: 20px;
+  border: 1px solid gray;
+}
+.nav-container .nav-menu-bar-container .nav-menu-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 30px;
+}
+.nav-container .nav-menu-bar-container .nav-menu-bar .bar {
+  width: 25px;
+  height: 5px;
+  background: black;
+}
+.nav-container .nav-links-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container .nav-links-container .nav-logo-container {
+  display: block;
+}
+.nav-container .nav-links-container .nav-items-container {
+  display: block;
+}
+.nav-container .nav-links-container .nav-items-container .nav-items-list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.nav-container .nav-links-container .nav-items-container .nav-item {
+  margin: 0px 10px;
+}
+
+.footer-container-wrapper {
+  display: block;
+}
+.footer-container-wrapper .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
