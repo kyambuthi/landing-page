@@ -26,7 +26,6 @@ html {
 .nav-container .nav-menu-bar-container {
   display: block;
   padding: 5px;
-  border: 1px solid gray;
 }
 .nav-container .nav-menu-bar-container .nav-menu-bar {
   display: flex;
@@ -53,7 +52,6 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 15px;
-  border: 1px solid gray;
 }
 .nav-container .nav-links-container .nav-items-container {
   display: block;
@@ -64,7 +62,6 @@ html {
   align-items: center;
 }
 .nav-container .nav-links-container .nav-items-container .nav-item {
-  border: 1px solid gray;
   padding: 8px 15px;
 }
 .nav-container .nav-links-container .nav-items-container .nav-item .nav-link {

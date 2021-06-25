@@ -10,7 +10,6 @@
     .nav-menu-bar-container {
         display: block;
         padding: 5px;
-        border: 1px solid gray;
 
         .nav-menu-bar {
             display: flex;
@@ -42,7 +41,6 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 padding: 8px 15px;
-                border: 1px solid gray;
             }
         }
 
@@ -56,7 +54,6 @@
             }
 
             .nav-item {
-                border: 1px solid gray;
                 padding: 8px 15px;
 
                 .nav-link {
