@@ -67,7 +67,8 @@ html {
 .nav-container .nav-links-container .nav-items-container .nav-item .nav-link {
   letter-spacing: 2px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
+  color: #141414;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -79,12 +80,18 @@ html {
 }
 
 .footer-container-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: block;
+  border-top: 1px solid gray;
 }
 .footer-container-wrapper .footer-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px 10px;
 }
 
 .footer-nav {
@@ -92,6 +99,12 @@ html {
   align-items: center;
   justify-content: space-between;
   min-width: 300px;
+}
+.footer-nav .footer-nav-item {
+  display: block;
+}
+.footer-nav .footer-nav-item .nav-footer-link {
+  color: #181818;
 }
 
 /*# sourceMappingURL=styles.css.map */
