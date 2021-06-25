@@ -48,6 +48,8 @@ html {
 }
 .nav-container .nav-links-container .nav-logo-container .nav-logo {
   letter-spacing: 2px;
+  font-size: 14px;
+  color: #141414;
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
@@ -74,7 +76,9 @@ html {
 }
 
 .bait-banner {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 10px 15px;
 }
@@ -105,6 +109,13 @@ html {
 }
 .footer-nav .footer-nav-item .nav-footer-link {
   color: #181818;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
