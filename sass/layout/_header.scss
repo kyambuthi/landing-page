@@ -1,3 +1,11 @@
 // ------------------------------------------------
 //  site-header.
 // ------------------------------------------------
+
+.header-container-wrapper {
+    display: block;
+
+    .header-container {
+        display: block;
+    }
+}
