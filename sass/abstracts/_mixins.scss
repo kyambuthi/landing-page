@@ -2,6 +2,6 @@
 //  mixins
 // ------------------------------------------------
 
-@mixin outline-border($color) {
-    border: 1px solid $color;
+@mixin bd {
+    border: 1px solid gray;
 }

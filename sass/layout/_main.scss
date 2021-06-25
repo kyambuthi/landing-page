@@ -2,6 +2,8 @@
 //  site-main.
 // ------------------------------------------------
 
+// I'll have to rewrite all this - i know it's all confusing.
+
 .bait-banner {
     display: flex;
     flex-direction: column;
@@ -9,4 +11,69 @@
     text-align: center;
     padding: 10px 15px;
 
+    .bait-content-container {
+        display: block;
+        max-width: 500px;
+        padding: 10px;
+        //@include bd;
+
+        .bait-header {
+            font-size: 42px;
+        }
+    }
+
+    .bait-action-container {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        padding: 10px;
+        //@include bd;
+    }
+}
+
+.bait-form {
+    display: block;
+    padding: 10px 0px;
+
+    // hide the form-label. will add later.
+    .form-label {
+        display: none;
+    }
+
+    .form-span {
+        font-size: 14px;
+    }
+
+    .form-item-squared {
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(43, 43, 43);
+
+        .form-item-input {
+            flex: 80%;
+            display: block;
+            
+
+            .form-input {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                border: none;
+            }
+        }
+
+        .form-item-submit {
+            flex: 20%;
+            display: block;
+            
+            .form-submit {
+                cursor: pointer;
+                display: block;
+                width: 100%;
+                padding: 10px 0px;
+                background: rgb(255, 174, 174);
+                border: none;
+            }
+        }
+    }
 }
