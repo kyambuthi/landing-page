@@ -1,1 +1,20 @@
-/** landing-page styles.css | MIT LICENSE 2021 | kyambuthi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: block;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.header-container-wrapper {
+  display: block;
+}
+.header-container-wrapper .header-container {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
