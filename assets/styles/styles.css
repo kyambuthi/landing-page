@@ -19,7 +19,7 @@ html {
 }
 .header-container-wrapper .header-container {
   display: block;
-  border-bottom: 1px solid gray;
+  box-shadow: 0px 1px 5px #adb5bd;
 }
 
 .nav-container {
@@ -54,7 +54,7 @@ html {
   letter-spacing: 2px;
   font-size: 14px;
   color: #141414;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   padding: 8px 15px;
@@ -73,7 +73,7 @@ html {
 .nav-container .nav-links-container .nav-items-container .nav-item .nav-link {
   letter-spacing: 2px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #141414;
   text-transform: uppercase;
   text-decoration: none;
@@ -147,7 +147,7 @@ html {
   left: 0;
   right: 0;
   display: block;
-  border-top: 1px solid gray;
+  border-top: 1px solid #adb5bd;
 }
 .footer-container-wrapper .footer-container {
   display: flex;
