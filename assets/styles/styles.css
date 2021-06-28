@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/RalewayVariableFont.ttf");
+}
 html {
   display: block;
   font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Raleway";
 }
 
 .header-container-wrapper {
