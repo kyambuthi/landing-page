@@ -44,8 +44,13 @@ html {
   background: black;
 }
 .nav-container .nav-links-container {
-  display: flex;
-  align-items: center;
+  display: none;
+}
+@media (min-width: 540px) {
+  .nav-container .nav-links-container {
+    display: flex;
+    align-items: center;
+  }
 }
 .nav-container .nav-links-container .nav-logo-container {
   display: block;
@@ -74,7 +79,7 @@ html {
   letter-spacing: 2px;
   font-size: 14px;
   font-weight: 600;
-  color: #141414;
+  color: #6c757d;
   text-transform: uppercase;
   text-decoration: none;
 }

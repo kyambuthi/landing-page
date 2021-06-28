@@ -1,12 +1,24 @@
 // ------------------------------------------------
-//  variables
+//  variables.scss
 // ------------------------------------------------
 
-// site color-palletes stored in a sassy map.
+// responsive web design breakpoints.
+// -----------------------------------------
+$breakpoints: (
+    'small': (min-width: 420px),
+    'medium': (min-width: 540px),
+    'large': (min-width: 640px),
+    'extra-large': (min-width: 720px),
+    'super-large': (min-width: 980px),
+    'huge': (min-width: 1280px),
+);
 
-$color_pallete: (
-    // https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8
-    blue_plt: (
+// site color-palletes stored in a sassy map.
+// ------------------------------------------
+
+$color-pallete: (
+    'blue-plt': (
+        // https://coolors.co/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8
         1: #03045e,
         2: #023e8a,
         3: #0077b6,
@@ -17,9 +29,8 @@ $color_pallete: (
         8: #ade8f4,
         9: #caf0f8,
     ),
-
-    // https://coolors.co/ffedd8-f3d5b5-e7bc91-d4a276-bc8a5f-a47148-8b5e34-6f4518-603808-583101
-    brown_plt: (
+    'brown-plt': (
+        // https://coolors.co/ffedd8-f3d5b5-e7bc91-d4a276-bc8a5f-a47148-8b5e34-6f4518-603808-583101
         1: #583101,
         2: #603808,
         3: #6f4518,
@@ -29,10 +40,9 @@ $color_pallete: (
         7: #d4a276,
         8: #e7bc91,
         9: #f3d5b5,
-    )
-    ,
-    // https://coolors.co/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15
-    green_plt: (
+    ),
+    'green-plt': (
+        // https://coolors.co/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15
         1: #081c15,
         2: #1b4332,
         3: #2d6a4f,
@@ -43,9 +53,8 @@ $color_pallete: (
         8: #b7e4c7,
         9: #d8f3dc,
     ),
-
-    // https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
-    black_plt: (
+    'black-plt': (
+        // https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
         1: #212529,
         2: #343a40,
         3: #495057,
@@ -56,9 +65,8 @@ $color_pallete: (
         8: #e9ecef,
         9: #f8f9fa,
     ),
-
     // https://coolors.co/9ba9ff-a5adff-afb1ff-b9b5ff-c4baff-cebeff-d8c2ff-e2c6ff-eccaff
-    purple_plt: (
+    'purple-plt': (
         1: #9ba9ff,
         2: #a5adff,
         3: #afb1ff,
@@ -68,10 +76,10 @@ $color_pallete: (
         7: #d8c2ff,
         8: #e2c6ff,
         9: #eccaff,
-    )
+    ),
 );
 
 // color accessor function.
-@function get-color($color, $value: 0) {
-    @return map-get(map-get($color_pallete, $color), $value);
+@function get-color($color, $value) {
+    @return map-get(map-get($color-pallete, $color), $value);
 }

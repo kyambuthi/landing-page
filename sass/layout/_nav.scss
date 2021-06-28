@@ -28,8 +28,14 @@
 
     // nav-links.
     .nav-links-container {
-        display: flex;
-        align-items: center;
+
+        display: none;
+
+        @include respond-to('medium') {
+            display: flex;
+            align-items: center;
+        }
+
 
         // .nav-logo-container.
         .nav-logo-container {
@@ -62,7 +68,7 @@
                     letter-spacing: 2px;
                     font-size: 14px;
                     font-weight: 600;
-                    color: rgb(20, 20, 20);
+                    color: get-color('black-plt', 4);
                     text-transform: uppercase;
                     text-decoration: none;
                 }
