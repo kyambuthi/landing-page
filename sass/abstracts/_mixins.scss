@@ -7,7 +7,6 @@
 // https://sass-guidelin.es/#responsive-web-design-and-breakpoints
 // ---------------------------------------------------------------
 
-
 @mixin respond-to($breakpoint) {
     $raw-query: map-get($breakpoints, $breakpoint);
 

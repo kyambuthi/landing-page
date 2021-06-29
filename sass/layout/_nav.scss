@@ -28,9 +28,9 @@
 
     // nav-links.
     .nav-links-container {
-
         display: none;
 
+        // displays the nav links - medium-breakpoint.
         @include respond-to('medium') {
             display: flex;
             align-items: center;
