@@ -12,14 +12,23 @@ html {
   display: block;
   font-size: 16px;
   font-family: "Raleway";
+  background: #f8f9fa;
 }
 
 .header-container-wrapper {
-  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px #ced4da;
 }
 .header-container-wrapper .header-container {
   display: block;
-  box-shadow: 0px 1px #ced4da;
+  width: 700px;
 }
 
 .nav-container {
@@ -45,6 +54,7 @@ html {
 }
 .nav-container .nav-links-container {
   display: none;
+  width: 100%;
 }
 @media (min-width: 540px) {
   .nav-container .nav-links-container {
@@ -57,7 +67,7 @@ html {
 }
 .nav-container .nav-links-container .nav-logo-container .nav-logo {
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px;
   color: #141414;
   font-weight: 700;
   text-transform: uppercase;
@@ -66,10 +76,14 @@ html {
 }
 .nav-container .nav-links-container .nav-items-container {
   display: block;
+  width: 100%;
+  justify-content: flex-end;
+  align-self: flex-end;
 }
 .nav-container .nav-links-container .nav-items-container .nav-items-list {
   list-style-type: none;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 .nav-container .nav-links-container .nav-items-container .nav-item {
@@ -77,11 +91,18 @@ html {
 }
 .nav-container .nav-links-container .nav-items-container .nav-item .nav-link {
   letter-spacing: 2px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #6c757d;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.main-container-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .bait-banner {
@@ -151,6 +172,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 999;
   display: block;
   border-top: 1px solid #adb5bd;
 }
@@ -172,13 +194,6 @@ html {
 }
 .footer-nav .footer-nav-item .nav-footer-link {
   color: #181818;
-}
-
-.main-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

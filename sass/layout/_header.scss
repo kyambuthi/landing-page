@@ -3,11 +3,20 @@
 // ------------------------------------------------
 
 .header-container-wrapper {
-    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px get-color('black-plt', 6);
 
     .header-container {
         display: block;
-        box-shadow: 0px 1px get-color('black-plt', 6);
+        width: 700px;
+        
     }
 }
 
