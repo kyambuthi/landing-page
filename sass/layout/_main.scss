@@ -2,10 +2,15 @@
 //  site-main.
 // ------------------------------------------------
 .main-container-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    width: 100%;
     height: 100vh;
+
+    .main-container {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 // I'll have to rewrite all this - i know it's all confusing.
@@ -15,6 +20,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 55px;
     padding: 10px 15px;
 
     .bait-content-container {
