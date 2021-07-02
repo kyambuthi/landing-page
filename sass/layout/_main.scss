@@ -4,19 +4,74 @@
 .main-container-wrapper {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    margin-bottom: 50px;
     background: get-color('black-plt', 8);
 
     .main-container {
         display: block;
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
 }
 
-// I'll have to rewrite all this - i know it's all confusing.
+// jumbo-banner-section.
+// ---------------------------
+.jumbo-banner-section {
+    display: block;
+}
 
-.bait-banner {
+// mini-banner-section.
+// ---------------------------
+.mini-banner-section {
+    display: block;
+    height: auto;
+    width: 100%;
+
+    .mini-banner {
+        display: block;
+        border: 1px solid get-color('black-plt', 5);
+
+        .mini-banner-header {
+            display: block;
+            text-align: center;
+            width: 100%;
+
+            .mini-header {
+                font-size: 16px;
+            }
+
+            .mini-context {
+                font-size: 14px;
+            }
+        }
+
+        .mini-banner-body {
+            display: flex;
+            align-items: center;
+
+            .mini-banner-context {
+                flex: 50%;
+                height: 300px;
+                border: 1px solid get-color('black-plt', 6);
+            }
+
+            .mini-banner-media {
+                flex: 50%;
+                height: 300px;
+                border: 1px solid get-color('black-plt', 6);
+            }
+        }
+
+        .mini-banner-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.jumbo-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
