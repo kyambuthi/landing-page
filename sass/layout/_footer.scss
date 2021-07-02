@@ -9,7 +9,8 @@
     right: 0;
     z-index: 999;
     display: block;
-    border-top: 1px solid get-color('black-plt', 5);
+    background: get-color('black-plt', 7);
+    border-top: 1px solid get-color('black-plt', 6);
 
     .footer-container {
         display: flex;

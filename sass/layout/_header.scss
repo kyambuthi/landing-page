@@ -1,15 +1,6 @@
 // ------------------------------------------------
 //  site-header.
 // ------------------------------------------------
-
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .header-container-wrapper {
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.123);
-    }
-}
-
 .header-container-wrapper {
     position: fixed;
     top: 0;

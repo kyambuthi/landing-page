@@ -15,13 +15,6 @@ html {
   background: #f8f9fa;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .header-container-wrapper {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.123);
-  }
-}
 .header-container-wrapper {
   position: fixed;
   top: 0;
@@ -110,6 +103,7 @@ html {
   display: block;
   width: 100%;
   height: 100vh;
+  background: #e9ecef;
 }
 .main-container-wrapper .main-container {
   display: block;
@@ -187,7 +181,8 @@ html {
   right: 0;
   z-index: 999;
   display: block;
-  border-top: 1px solid #adb5bd;
+  background: #dee2e6;
+  border-top: 1px solid #ced4da;
 }
 .footer-container-wrapper .footer-container {
   display: flex;
