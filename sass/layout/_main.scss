@@ -1,10 +1,15 @@
 // ------------------------------------------------
 //  site-main.
 // ------------------------------------------------
+
+// main-container-wrapper.
+// --------------------------
+
 .main-container-wrapper {
     display: block;
     width: 100%;
     height: auto;
+    margin-top: 55px;
     margin-bottom: 50px;
     background: get-color('black-plt', 8);
 
@@ -21,6 +26,33 @@
     display: block;
 }
 
+.jumbo-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+
+    .bait-content-container {
+        display: block;
+        max-width: 500px;
+        padding: 10px;
+        //@include bd;
+
+        .bait-header {
+            font-size: 42px;
+        }
+    }
+
+    .bait-action-container {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        padding: 10px;
+        //@include bd;
+    }
+}
+
 // mini-banner-section.
 // ---------------------------
 .mini-banner-section {
@@ -31,7 +63,7 @@
     .mini-banner {
         position: relative;
         display: block;
-        border: 1px solid get-color('black-plt', 5);
+        border-top: 1px solid get-color('black-plt', 5);
 
         .mini-banner-header {
             display: block;
@@ -69,34 +101,6 @@
             align-items: center;
             justify-content: center;
         }
-    }
-}
-
-.jumbo-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 55px;
-    padding: 10px 15px;
-
-    .bait-content-container {
-        display: block;
-        max-width: 500px;
-        padding: 10px;
-        //@include bd;
-
-        .bait-header {
-            font-size: 42px;
-        }
-    }
-
-    .bait-action-container {
-        display: block;
-        width: 100%;
-        max-width: 600px;
-        padding: 10px;
-        //@include bd;
     }
 }
 
@@ -144,6 +148,104 @@
                 padding: 10px 0px;
                 background: rgb(255, 174, 174);
                 border: none;
+            }
+        }
+    }
+}
+// FIX: THis is a mess.
+
+// pricing-cards-container.
+// ----------------------------
+.pricing-cards-container {
+    display: block;
+}
+
+// pricing-card.
+// ----------------------------
+.pricing-card {
+    position: relative;
+    display: block;
+    background: get-color('black-plt', 7);
+    margin-bottom: 12px;
+    box-shadow: 1px 1px 4px 1px get-color('black-plt', 5);
+    //border: 1px solid get-color('black-plt', 3);
+
+    // pricing-context-container.
+    // --------------------------
+    .pricing-context {
+        display: block;
+        padding: 20px 10px;
+
+        .major-context {
+            display: flex;
+            flex-direction: column;
+
+            .offer-label {
+                align-self: center;
+                display: block;
+                padding: 5px;
+                width: 140px;
+                font-size: 14px;
+                font-weight: 700;
+                border: 1px solid get-color('black-plt', 5);
+                border-radius: 10px;
+                background: get-color('black-plt', 5);
+            }
+
+            .tier-name {
+                margin-top: 10px;
+                display: block;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+
+        .minor-context {
+            display: block;
+        }
+
+        .minor-context-list {
+            list-style-type: none;
+        }
+    }
+
+    // pricing-action-container.
+    // --------------------------
+    .pricing-action {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+
+        .action-button-wrapper {
+            display: block;
+
+            .jumbo-action-button {
+                display: block;
+                padding: 5px 25px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 2px;
+                text-decoration: none;
+                color: get-color('black-plt', 6);
+                background: get-color('black-plt', 2);
+                border: 1px solid get-color('black-plt', 3);
+                border-radius: 5px;
+            }
+        }
+
+        .legal-disclaimer-wrapper {
+            display: block;
+            margin-top: 10px;
+
+            .legal-disclaimer {
+                text-decoration: none;
+            }
+
+            .legal-disclaimer-link {
+                font-weight: 400;
+                color: get-color('black-plt', 2);
             }
         }
     }
