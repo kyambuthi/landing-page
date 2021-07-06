@@ -1,0 +1,112 @@
+// pricing-cards-container.
+// ----------------------------
+.pricing-cards-container, .mini-pricing-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+// pricing-card.
+// ----------------------------
+.pricing-card, .pricing-card-mini {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-bottom: 12px;
+    background: get-color('black-plt', 7);
+    box-shadow: 1px 1px 4px 1px get-color('black-plt', 5);
+    border: 1px solid get-color('black-plt', 6);
+    border-radius: 5px;
+
+    // pricing-context-container.
+    // --------------------------
+    .pricing-context, .pricing-context-mini {
+        display: block;
+        padding: 20px 10px;
+
+        .major-context {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid get-color('black-plt', 5);
+
+            .offer-label {
+                align-self: center;
+                display: block;
+                padding: 5px;
+                width: 140px;
+                font-size: 14px;
+                font-weight: 700;
+                border: 1px solid get-color('black-plt', 5);
+                border-radius: 10px;
+                background: get-color('black-plt', 5);
+            }
+
+            .tier-name {
+                display: block;
+                margin-top: 10px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+
+        .minor-context {
+            display: block;
+        }
+
+        .minor-context-list {
+            list-style-type: none;
+        }
+    }
+
+    // pricing-action-container.
+    // --------------------------
+    .pricing-action, .pricing-action-mini {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+
+        .action-button-wrapper {
+            display: block;
+
+            .jumbo-action-button {
+                display: block;
+                padding: 5px 25px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 14px;
+                letter-spacing: 2px;
+                text-decoration: none;
+                color: get-color('black-plt', 6);
+                background: get-color('black-plt', 2);
+                border: 1px solid get-color('black-plt', 3);
+                border-radius: 5px;
+            }
+        }
+
+        .legal-disclaimer-wrapper {
+            display: block;
+            margin-top: 10px;
+
+            .legal-disclaimer {
+                text-decoration: none;
+            }
+
+            .legal-disclaimer-link {
+                font-weight: 400;
+                color: get-color('black-plt', 2);
+            }
+        }
+    }
+}
+
+// pricing-card-mini.
+// -----------------------
+
+.pricing-card-mini {
+    display: block;
+    margin: 0px 15px;
+}
