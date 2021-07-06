@@ -22,11 +22,15 @@
     'layout/nav',
     'layout/main',
     'layout/aside',
-    'layout/footer';
+    'layout/footer',
+    'layout/jumbo-banner-section',
+    'layout/mini-banner-section';
 
 // 5. site-components styles.
 @import
-    'components/buttons';
+    'components/buttons',
+    'components/jumbo-form',
+    'components/pricing-cards';
 
 // 6. Page-specific styles.
 @import

@@ -1,0 +1,40 @@
+// jumbo-banner-section.
+// ---------------------------
+.jumbo-banner-section {
+    display: block;
+}
+
+// jumbo-body.
+.jumbo-body {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+// jumbo-banner.
+// ----------------------------
+.jumbo-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+
+    .bait-content-container {
+        display: block;
+        max-width: 500px;
+        padding: 10px;
+
+        .bait-header {
+            font-size: 42px;
+        }
+    }
+
+    .bait-action-container {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+        padding: 10px;
+    }
+}
+
