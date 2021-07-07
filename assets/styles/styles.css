@@ -134,13 +134,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 300px;
 }
 .footer-nav .footer-nav-item {
   display: block;
+  margin: 0px 10px;
 }
 .footer-nav .footer-nav-item .nav-footer-link {
-  color: #181818;
+  font-weight: 600;
+  color: #6c757d;
 }
 
 .jumbo-banner-section {
