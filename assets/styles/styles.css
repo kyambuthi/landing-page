@@ -145,10 +145,6 @@ html {
 
 .jumbo-banner-section {
   display: block;
-}
-
-.jumbo-body {
-  display: block;
   height: auto;
   width: 100%;
 }
@@ -158,21 +154,20 @@ html {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px 15px;
+  padding: 30px 15px;
 }
-.jumbo-banner .bait-content-container {
-  display: block;
-  max-width: 500px;
-  padding: 10px;
-}
-.jumbo-banner .bait-content-container .bait-header {
-  font-size: 42px;
-}
-.jumbo-banner .bait-action-container {
+.jumbo-banner .jumbo-banner-header {
   display: block;
   width: 100%;
-  max-width: 600px;
-  padding: 10px;
+  margin-bottom: 15px;
+}
+.jumbo-banner .jumbo-banner-header .jumbo-header {
+  font-size: 32px;
+}
+.jumbo-banner .jumbo-body {
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .mini-banner-section {
@@ -232,43 +227,64 @@ html {
   justify-content: center;
 }
 
-.bait-form {
+button {
   display: block;
-  padding: 10px 0px;
+  background: #0077b6;
+  padding: 2px 4px;
 }
-.bait-form .form-label {
-  display: none;
-}
-.bait-form .form-span {
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-.bait-form .form-item-squared {
+
+.jumbo-form {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #2b2b2b;
+  flex-direction: column;
+  padding: 20px 0px;
 }
-.bait-form .form-item-squared .form-item-input {
-  flex: 80%;
+.jumbo-form .form-item {
   display: block;
 }
-.bait-form .form-item-squared .form-item-input .form-input {
+.jumbo-form .form-label {
+  display: none;
+}
+.jumbo-form .form-span {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.jumbo-form .form-item-squared {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 1px 1px 1px 1px #adb5bd;
+  border-radius: 5px;
+}
+.jumbo-form .form-item-squared .form-item-input {
+  flex: 80%;
+  display: block;
+  width: 100%;
+}
+.jumbo-form .form-item-squared .form-item-input .form-input {
   display: block;
   width: 100%;
   padding: 10px;
   border: none;
 }
-.bait-form .form-item-squared .form-item-submit {
+.jumbo-form .form-item-squared .form-item-input .form-input:focus {
+  border: none !important;
+}
+.jumbo-form .form-item-squared .form-item-submit {
   flex: 20%;
   display: block;
 }
-.bait-form .form-item-squared .form-item-submit .form-submit {
+.jumbo-form .form-item-squared .form-item-submit .form-submit {
   cursor: pointer;
   display: block;
   width: 100%;
   padding: 10px 0px;
-  background: #ffaeae;
+  font-weight: 700;
+  color: #212529;
+  background: #9ba9ff;
   border: none;
 }
 
