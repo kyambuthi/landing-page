@@ -1,6 +1,17 @@
-.bait-form {
-    display: block;
-    padding: 10px 0px;
+// .jumbo-form
+// ------------------------
+.jumbo-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+
+    // .jumbo-form-item
+    // -------------------------
+    .form-item {
+        display: block;
+    }
 
     // hide the form-label. will add later.
     .form-label {
@@ -16,11 +27,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid rgb(43, 43, 43);
+        width: 100%;
+        max-width: 700px;
+        box-shadow: 1px 1px 1px 1px get-color('black-plt', 5);
+        //border: 1px solid get-color('black-plt', 5);
+        border-radius: 5px;
 
         .form-item-input {
             flex: 80%;
             display: block;
+            width: 100%;
             
 
             .form-input {
@@ -28,6 +44,10 @@
                 width: 100%;
                 padding: 10px;
                 border: none;
+            }
+
+            .form-input:focus {
+                border: none !important;
             }
         }
 
@@ -40,7 +60,9 @@
                 display: block;
                 width: 100%;
                 padding: 10px 0px;
-                background: rgb(255, 174, 174);
+                font-weight: 700;
+                color: get-color('black-plt', 1);
+                background: get-color('purple-plt', 1);
                 border: none;
             }
         }
