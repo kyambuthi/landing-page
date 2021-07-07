@@ -1,6 +1,5 @@
 // mini-banner-section.
 // ---------------------------
-
 .mini-banner-section {
     display: block;
     height: auto;
@@ -9,11 +8,10 @@
 
 // mini-banner.
 // ----------------------------
-
 .mini-banner {
     position: relative;
     display: block;
-    padding: 4px;
+    padding: 30px 10px;
     border-top: 1px solid get-color('black-plt', 5);
 
     .mini-banner-header {
@@ -45,8 +43,8 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            height: 300px;
-            border: 1px solid get-color('black-plt', 6);
+            height: auto;
+            //border: 1px solid get-color('black-plt', 6);
         }
 
         .mini-banner-media {
@@ -56,12 +54,14 @@
             right: 0;
             display: block;
             width: 100%;
-            height: 300px;
+            height: auto;
             //background: get-color('black-plt', 1);
-            border: 1px solid get-color('black-plt', 6);
+            //border: 1px solid get-color('black-plt', 6);
         }
     }
 
+    // responsive mini-banner
+    // ----------------------------
     .mini-banner-footer {
         display: flex;
         align-items: center;

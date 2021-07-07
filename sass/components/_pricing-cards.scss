@@ -2,8 +2,10 @@
 // ----------------------------
 .pricing-cards-container, .mini-pricing-cards-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+
 }
 
 // pricing-card.
@@ -37,6 +39,7 @@
                 display: block;
                 padding: 5px;
                 width: 140px;
+                text-align: center;
                 font-size: 14px;
                 font-weight: 700;
                 border: 1px solid get-color('black-plt', 5);
@@ -108,5 +111,5 @@
 
 .pricing-card-mini {
     display: block;
-    margin: 0px 15px;
+    margin: 15px;
 }
