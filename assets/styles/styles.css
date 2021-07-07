@@ -312,6 +312,7 @@ button {
 .pricing-card .pricing-context .major-context, .pricing-card .pricing-context-mini .major-context, .pricing-card-mini .pricing-context .major-context, .pricing-card-mini .pricing-context-mini .major-context {
   display: flex;
   flex-direction: column;
+  text-align: center;
   margin-bottom: 10px;
   padding-bottom: 5px;
   border-bottom: 2px solid #adb5bd;
@@ -336,6 +337,13 @@ button {
 }
 .pricing-card .pricing-context .minor-context, .pricing-card .pricing-context-mini .minor-context, .pricing-card-mini .pricing-context .minor-context, .pricing-card-mini .pricing-context-mini .minor-context {
   display: block;
+  text-align: center;
+}
+.pricing-card .pricing-context .minor-context .legal-disclaimer, .pricing-card .pricing-context-mini .minor-context .legal-disclaimer, .pricing-card-mini .pricing-context .minor-context .legal-disclaimer, .pricing-card-mini .pricing-context-mini .minor-context .legal-disclaimer {
+  font-size: 12px;
+}
+.pricing-card .pricing-context .minor-context .legal-disclaimer .legal-disclaimer-link, .pricing-card .pricing-context-mini .minor-context .legal-disclaimer .legal-disclaimer-link, .pricing-card-mini .pricing-context .minor-context .legal-disclaimer .legal-disclaimer-link, .pricing-card-mini .pricing-context-mini .minor-context .legal-disclaimer .legal-disclaimer-link {
+  color: #6c757d;
 }
 .pricing-card .pricing-context .minor-context-list, .pricing-card .pricing-context-mini .minor-context-list, .pricing-card-mini .pricing-context .minor-context-list, .pricing-card-mini .pricing-context-mini .minor-context-list {
   list-style-type: none;

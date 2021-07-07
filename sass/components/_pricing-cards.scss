@@ -30,6 +30,7 @@
         .major-context {
             display: flex;
             flex-direction: column;
+            text-align: center;
             margin-bottom: 10px;
             padding-bottom: 5px;
             border-bottom: 2px solid get-color('black-plt', 5);
@@ -57,6 +58,15 @@
 
         .minor-context {
             display: block;
+            text-align: center;
+
+            .legal-disclaimer {
+                font-size: 12px;
+
+                .legal-disclaimer-link {
+                    color: get-color('black-plt', 4);
+                }
+            }
         }
 
         .minor-context-list {
