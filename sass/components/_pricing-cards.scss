@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
 }
 
@@ -15,7 +15,7 @@
     display: block;
     width: 200px;
     height: auto;
-    margin-bottom: 12px;
+    margin: 15px;
     background: get-color('black-plt', 7);
     box-shadow: 1px 1px 4px 1px get-color('black-plt', 5);
     border: 1px solid get-color('black-plt', 6);
@@ -60,6 +60,7 @@
             display: block;
             text-align: center;
 
+            // for the mini-legal-disclaimer in the mini-pricing card.
             .legal-disclaimer {
                 font-size: 12px;
 
@@ -102,24 +103,17 @@
 
         .legal-disclaimer-wrapper {
             display: block;
+            text-align: center;
             margin-top: 10px;
 
             .legal-disclaimer {
+                font-size: 12px;
                 text-decoration: none;
             }
 
             .legal-disclaimer-link {
-                font-weight: 400;
-                color: get-color('black-plt', 2);
+                color: get-color('black-plt', 4);
             }
         }
     }
-}
-
-// pricing-card-mini.
-// -----------------------
-
-.pricing-card-mini {
-    display: block;
-    margin: 15px;
 }

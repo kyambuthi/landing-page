@@ -292,7 +292,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .pricing-card, .pricing-card-mini {
@@ -300,7 +300,7 @@ button {
   display: block;
   width: 200px;
   height: auto;
-  margin-bottom: 12px;
+  margin: 15px;
   background: #dee2e6;
   box-shadow: 1px 1px 4px 1px #adb5bd;
   border: 1px solid #ced4da;
@@ -373,19 +373,15 @@ button {
 }
 .pricing-card .pricing-action .legal-disclaimer-wrapper, .pricing-card .pricing-action-mini .legal-disclaimer-wrapper, .pricing-card-mini .pricing-action .legal-disclaimer-wrapper, .pricing-card-mini .pricing-action-mini .legal-disclaimer-wrapper {
   display: block;
+  text-align: center;
   margin-top: 10px;
 }
 .pricing-card .pricing-action .legal-disclaimer-wrapper .legal-disclaimer, .pricing-card .pricing-action-mini .legal-disclaimer-wrapper .legal-disclaimer, .pricing-card-mini .pricing-action .legal-disclaimer-wrapper .legal-disclaimer, .pricing-card-mini .pricing-action-mini .legal-disclaimer-wrapper .legal-disclaimer {
+  font-size: 12px;
   text-decoration: none;
 }
 .pricing-card .pricing-action .legal-disclaimer-wrapper .legal-disclaimer-link, .pricing-card .pricing-action-mini .legal-disclaimer-wrapper .legal-disclaimer-link, .pricing-card-mini .pricing-action .legal-disclaimer-wrapper .legal-disclaimer-link, .pricing-card-mini .pricing-action-mini .legal-disclaimer-wrapper .legal-disclaimer-link {
-  font-weight: 400;
-  color: #343a40;
-}
-
-.pricing-card-mini {
-  display: block;
-  margin: 15px;
+  color: #6c757d;
 }
 
 /*# sourceMappingURL=styles.css.map */
