@@ -11,7 +11,7 @@
 .mini-banner {
     position: relative;
     display: block;
-    padding: 30px 10px;
+    padding: 55px 10px;
     border-top: 1px solid get-color('black-plt', 5);
 
     .mini-banner-header {
@@ -21,7 +21,7 @@
         width: 100%;
 
         .mini-header {
-            font-size: 32px;
+            font-size: 38px;
             letter-spacing: 1px;
             margin-bottom: 10px;
         }
@@ -34,7 +34,7 @@
     .mini-banner-body {
         position: relative;
         display: flex;
-        align-items: center;
+        //align-items: center;
 
         .mini-banner-context {
             z-index: 99;
@@ -66,5 +66,63 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+// .context-container
+// -----------------------------------
+.context-container {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+// .context-section.
+// -------------------------------------
+.context-section {
+    display: block;
+    padding: 10px;
+    background: get-color('black-plt', 7);
+    border: 1px solid get-color('black-plt', 7);
+
+    // context-section-header-container.
+    .context-section-header-container {
+        display: block;
+        margin-bottom: 10px;
+        background: get-color('black-plt', 7);
+        border: 1px solid get-color('black-plt', 6);
+    }
+
+    //context-section-body.
+    .context-section-body {
+        display: block;
+        background: get-color('black-plt', 7);
+        border: 1px solid get-color('black-plt', 6);
+    }
+}
+
+// .context-item
+// ------------------------------
+.context-item {
+    display: flex;
+    height: auto;
+    margin-bottom: 5px;
+    border: 1px solid get-color('black-plt', 5);
+
+    .context-rank-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        padding: 5px 10px;
+        margin-right: 10px;
+        border-right: 1px solid get-color('black-plt', 5);
+        border-radius: 2px;
+    }
+
+    .context-content-container {
+        display: block;
+        width: 100%;
+        //border: 1px solid get-color('black-plt', 5);
     }
 }
