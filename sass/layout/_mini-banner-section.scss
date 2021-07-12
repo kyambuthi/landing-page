@@ -107,8 +107,8 @@
 .context-item {
     display: flex;
     height: auto;
-    margin-bottom: 5px;
-    border: 1px solid get-color('black-plt', 6);
+    //margin-bottom: 5px;
+    border: 1px solid get-color('black-plt', 7);
 
     .context-rank-container {
         display: flex;
@@ -117,7 +117,7 @@
         width: 50px;
         padding: 5px 10px;
         margin-right: 10px;
-        border-right: 1px solid get-color('black-plt', 5);
+        border-right: 1px solid get-color('black-plt', 7);
         border-radius: 2px;
     }
 

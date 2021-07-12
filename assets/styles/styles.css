@@ -254,8 +254,7 @@ html {
 .context-item {
   display: flex;
   height: auto;
-  margin-bottom: 5px;
-  border: 1px solid #ced4da;
+  border: 1px solid #dee2e6;
 }
 .context-item .context-rank-container {
   display: flex;
@@ -264,7 +263,7 @@ html {
   width: 50px;
   padding: 5px 10px;
   margin-right: 10px;
-  border-right: 1px solid #adb5bd;
+  border-right: 1px solid #dee2e6;
   border-radius: 2px;
 }
 .context-item .context-content-container {
