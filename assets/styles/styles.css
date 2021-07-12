@@ -237,25 +237,25 @@ html {
   display: block;
   padding: 10px;
   background: #dee2e6;
-  border: 1px solid #dee2e6;
+  border: 1px solid #e9ecef;
 }
 .context-section .context-section-header-container {
   display: block;
+  padding: 5px 10px;
   margin-bottom: 10px;
-  background: #dee2e6;
-  border: 1px solid #ced4da;
+  background: #e9ecef;
+  border: 1px solid #e9ecef;
 }
 .context-section .context-section-body {
   display: block;
-  background: #dee2e6;
-  border: 1px solid #ced4da;
+  background: #e9ecef;
 }
 
 .context-item {
   display: flex;
   height: auto;
   margin-bottom: 5px;
-  border: 1px solid #adb5bd;
+  border: 1px solid #ced4da;
 }
 .context-item .context-rank-container {
   display: flex;
@@ -268,7 +268,8 @@ html {
   border-radius: 2px;
 }
 .context-item .context-content-container {
-  display: block;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
 
